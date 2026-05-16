@@ -8,11 +8,65 @@ tags:
   - Health Insurance
   - Hospitals
   - Pennsylvania
-description: 'A world-renowned health care provider and insurer headquartered in Pittsburgh, Pennsylvania. One of the largest nonprofit health systems in the United States, operating hospitals, physician practices, and a health insurance division serving millions of members.'
+  - FHIR
+description: 'A world-renowned health care provider and insurer headquartered in Pittsburgh, Pennsylvania. One of the largest nonprofit health systems in the United States, operating hospitals, physician practices, and a health insurance division (UPMC Health Plan) serving millions of members. UPMC Health Plan exposes an ONC 21st Century Cures Act Developer API for patient-authorized access to clinical and claims data over HL7 FHIR.'
 created: '2026-05-05'
-modified: '2026-05-05'
+modified: '2026-05-16'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: upmc:cures-act-developer-api
+    name: UPMC Health Plan ONC 21st Century Cures Act Developer API
+    tags:
+      - FHIR
+      - Patient Access
+      - Healthcare
+      - Health Insurance
+      - Cures Act
+      - HL7
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.upmchealthplan.com/
+    properties:
+      - url: https://www.upmchealthplan.com/
+        type: Documentation
+    description: >-
+      The UPMC Health Plan Developer API is the payer-side FHIR API mandated
+      by the ONC 21st Century Cures Act and the CMS Interoperability and
+      Patient Access Final Rule. It allows registered third-party applications
+      to retrieve a member's clinical (USCDI) and claims data on the member's
+      behalf using SMART-on-FHIR / OAuth 2.0 authorization. The API surface
+      includes the Patient Access API (clinical + claims) and the Provider
+      Directory API. UPMC Health Plan exposes a public link to the developer
+      API resource center in the footer of every page on upmchealthplan.com.
 common:
   - type: Website
     url: https://www.upmc.com/
+  - type: Website
+    url: https://www.upmchealthplan.com/
+  - type: Documentation
+    url: https://www.upmchealthplan.com/
+  - type: Features
+    data:
+      - name: Patient Access FHIR API
+        description: Member-authorized access to clinical (USCDI) and claims data per CMS Interoperability and Patient Access Final Rule
+      - name: Provider Directory API
+        description: Public machine-readable provider directory required by CMS Interoperability rules
+      - name: SMART-on-FHIR Authorization
+        description: OAuth 2.0 / SMART-on-FHIR app authorization flow for patient-mediated access
+      - name: HL7 FHIR R4 Data Model
+        description: USCDI-aligned FHIR R4 resources for clinical and claims data exchange
+  - type: UseCases
+    data:
+      - name: Patient Data Portability
+        description: Members move their clinical and claims data into third-party apps for personal use
+      - name: Care Coordination
+        description: Authorized clinical applications retrieve member records to improve care coordination across providers
+      - name: Health Apps and PHRs
+        description: Consumer-facing personal health record and wellness apps connect to UPMC member data with patient consent
+      - name: Provider Directory Lookups
+        description: Apps and portals discover in-network UPMC Health Plan providers through the public provider directory API
+  - type: Integrations
+    data:
+      - name: SMART App Launch
+        description: Apps register with UPMC Health Plan as SMART-on-FHIR clients to authenticate members
+      - name: USCDI Clinical Data
+        description: USCDI-aligned clinical resources flow to member-authorized third-party applications
