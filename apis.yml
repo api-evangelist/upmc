@@ -38,6 +38,10 @@ apis:
       Directory API. UPMC Health Plan exposes a public link to the developer
       API resource center in the footer of every page on upmchealthplan.com.
 common:
+  - type: GitHubOrganization
+    url: https://github.com/UPMC
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/upmc
   - type: Website
     url: https://www.upmc.com/
   - type: Website
