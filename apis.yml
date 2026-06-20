@@ -2,7 +2,7 @@ aid: upmc
 url: https://raw.githubusercontent.com/api-evangelist/upmc/refs/heads/main/apis.yml
 name: UPMC
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Healthcare
   - Health Insurance
@@ -23,7 +23,7 @@ apis:
       - Health Insurance
       - Cures Act
       - HL7
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.upmchealthplan.com/
     properties:
       - url: https://www.upmchealthplan.com/
