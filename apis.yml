@@ -23,7 +23,7 @@ tags:
 description: 'A world-renowned health care provider and insurer headquartered in Pittsburgh, Pennsylvania. One of the largest nonprofit health systems in the United States, operating hospitals, physician practices, and a health insurance division (UPMC Health Plan) serving millions of members. UPMC Health Plan exposes an ONC 21st Century Cures Act Developer API for patient-authorized access to clinical and claims data over HL7 FHIR.'
 created: '2026-05-05'
 modified: '2026-05-16'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: upmc:cures-act-developer-api
     name: UPMC Health Plan ONC 21st Century Cures Act Developer API
